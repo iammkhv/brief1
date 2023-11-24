@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - BriefCraft</title>
+    <link rel="stylesheet" href="registration-styles.css">
+</head>
+<body>
+
+<div id="registration-container">
+    <form id="registration-form">
+        <label for="reg-username">Логин:</label>
+        <input type="text" id="reg-username" name="reg-username" required><br>
+        <label for="reg-password">Пароль:</label>
+        <input type="password" id="reg-password" name="reg-password" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <div id="checkbox-container">
+            <input type="checkbox" id="privacy-checkbox" required>
+            <label for="privacy-checkbox">Я ознакомлен(а) и согласен(сна) с <a href="#">политикой конфиденциальности</a></label>
+        </div>
+        <button class="continue-btn" onclick="continueToMainPage()">Продолжить</button>
+    </form>
+</div>
+
+<script src="registration-script.js"></script>
+
+</body>
+</html>

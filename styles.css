@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#left-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#centered-text {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#right-side {
+    flex: 1;
+    background: url('your-image-url.png') center/cover no-repeat;
+}
+
+.auth-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #000;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    background: #ccc;
+}
+/* ... (остальные стили остаются без изменений) */
+
+#login-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+#login-form label,
+#login-form input,
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#login-form button {
+    font-size: 16px;
+    padding: 15px 30px;
+}
