@@ -1,37 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BriefCraft</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Анимированная панель</title>
 </head>
 <body>
+  <div id="panel" class="panel">
+    <!-- Здесь будут отображаться случайные числа -->
+  </div>
+  <button id="spinButton" class="spin-button" onclick="spinNumbers()">Крутить</button>
 
-<div id="container">
-    <div id="left-side">
-        <div id="centered-text">
-            <h1>Начать работу с BriefCraft</h1>
-            <button class="auth-btn" onclick="showLoginForm()">Вход</button>
-            <a href="registration.html"><button class="auth-btn">Регистрация</button></a>
-        </div>
-    </div>
-
-    <div id="right-side">
-        <div id="image"></div>
-    </div>
-</div>
-
-<div id="login-form">
-    <label for="login-username">Логин:</label>
-    <input type="text" id="login-username" name="login-username" required><br>
-    <label for="login-password">Пароль:</label>
-    <input type="password" id="login-password" name="login-password" required><br>
-    <button class="auth-btn" onclick="closeLoginForm()">Закрыть</button>
-    <!-- Добавьте кнопку или функциональность для обработки входа -->
-</div>
-
-<script src="main-script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
